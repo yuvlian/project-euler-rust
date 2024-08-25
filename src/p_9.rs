@@ -30,7 +30,7 @@ pub fn solution() {
 
     assert_eq!(product, 31875000 as i32);
 
-    println!("[P9] The Pythagorean triple for which a + b + c = 1000 is ({}, {}, {}). The product abc is {}.", a, b, c, product);
+    println!("[P9] The Pythagorean triple for which a+b+c = 1000 is ({}, {}, {}). The product abc is {}", a, b, c, product);
 }
 
 
