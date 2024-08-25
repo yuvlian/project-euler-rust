@@ -1,8 +1,10 @@
 # 1 Programming Language in 100 Problems
-this repository is inspired by https://github.com/NathanielJS1541/100_languages_template/
+A repository that was inspired by [100 Languages 100 Problems](https://github.com/NathanielJS1541/100_languages_template/).
 
-i was like nah imma just do allat in rust
+I thought to myself, why 100 languages? 
 
-well here it is lol
+And of course, as your average elitist rustacean I went: 
 
-thanks to https://github.com/lucky-bai/projecteuler-solutions/blob/master/Solutions.md for providing solutions i can do assert checks
+> I must use Rust for all of this! Let's solve the first 100 Project Euler problems with Rust! The greatest language ever!!! Rahhh!!
+
+Lastly, I'd like to give some thanks to [Project Euler Solutions](https://github.com/lucky-bai/projecteuler-solutions/) for providing the correct answers, making it possible for me to do assert_eq checks.
