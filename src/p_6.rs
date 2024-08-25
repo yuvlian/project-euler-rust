@@ -8,5 +8,17 @@ $$(1 + 2 + ... + 10)^2 = 55^2 = 3025.$$
 */
 
 pub fn solution() {
-    // placeholder function
+    let n = 100;
+
+    let sum_of_squares = (n * (n + 1) * (2 * n + 1)) / 6;
+
+    let sum = (n * (n + 1)) / 2;
+
+    let square_of_sum = sum * sum;
+
+    let diff = square_of_sum - sum_of_squares;
+
+    assert_eq!(diff, 25164150 as i32);
+
+    println!("[P6] The difference between the sum of the squares of the first {} natural numbers and the square of the sum is {}", n, diff);
 }

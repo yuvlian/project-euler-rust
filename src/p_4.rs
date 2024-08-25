@@ -26,7 +26,7 @@ pub fn solution() {
         }
     }
 
-    assert_eq!(largest_palindrome, 906609);
+    assert_eq!(largest_palindrome, 906609 as u32);
 
     println!("[P4] The largest palindrome made from the product of two 3-digit numbers is {}", largest_palindrome);
 }
