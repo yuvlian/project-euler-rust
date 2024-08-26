@@ -16,5 +16,46 @@ $$1, 3, 6, 10, 15, 21, 28, 36, 45, 55, \dots$$</p>
 */
 
 pub fn solution() {
-    // placeholder function
+    fn prime_factors_count(mut n: u64) -> u64 {
+        let mut count = 1;
+        let mut factor = 2;
+
+        while factor * factor <= n {
+            let mut exponent = 0;
+            while n % factor == 0 {
+                n /= factor;
+                exponent += 1;
+            }
+            count *= exponent + 1;
+            factor += 1;
+        }
+
+        if n > 1 {
+            count *= 2;
+        }
+
+        count
+    }
+
+    let mut n = 1;
+    let mut bill_cipher = 1;
+    let mut max_divisors = 0;
+
+    while max_divisors <= 500 {
+        n += 1;
+        bill_cipher += n;
+
+        let (a, b) = if n % 2 == 0 {
+            (n / 2, n + 1)
+        } else {
+            (n, (n + 1) / 2)
+        };
+
+        let divisors = prime_factors_count(a) * prime_factors_count(b);
+        max_divisors = divisors;
+    }
+
+    assert_eq!(bill_cipher, 76576500 as u64);
+
+    println!("[P12] The value of the first triangle number to have over five hundred divisors is {}", bill_cipher);
 }

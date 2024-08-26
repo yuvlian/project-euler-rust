@@ -9,6 +9,7 @@ mod p_8;
 mod p_9;
 mod p_10;
 mod p_11;
+mod p_12;
 
 fn main() {
     p_1::solution();
@@ -22,4 +23,5 @@ fn main() {
     p_9::solution();
     p_10::solution();
     p_11::solution();
+    p_12::solution();
 }
